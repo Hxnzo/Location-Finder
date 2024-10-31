@@ -1,17 +1,16 @@
 # LocationFinder App
 
 ## Overview
-LocationFinder is an Android app designed to manage and interact with location data for areas within the Greater Toronto Area (GTA), including cities like Oshawa, Ajax, Pickering, Scarborough, Downtown Toronto, Mississauga, Brampton, and Markham. The app enables users to add, view, edit, and delete locations in a local or cloud database. Additionally, users can query the database for latitude and longitude information for a given address and load a preset list of coordinates from a text file.
+LocationFinder is an Android app designed to manage and interact with location data for areas within the Greater Toronto Area (GTA). The app enables users to add, view, edit, and delete locations. Additionally, users can query the database for latitude and longitude information for a given address and load a preset list of coordinates from a text file located in the assets folder.
 
 ## Features
 
 ### 1. Database and Location Table
-- The app connects to a local or cloud database with a `location` table that includes the following columns:
+- The app connects to a local database with a `location` table that includes the following columns:
   - **ID**: Unique identifier for each location entry.
   - **Address**: Address associated with a given location.
   - **Latitude**: Latitude coordinate of the location.
   - **Longitude**: Longitude coordinate of the location.
-- The table is pre-populated with 100 locations from the GTA for quick access and demonstration purposes.
 
 ### 2. Main Functionalities
 - **Query Location**: Search for a specific address in the database to retrieve its latitude and longitude coordinates.
@@ -41,9 +40,6 @@ A helper class used as a getter and setter for the location’s properties (ID, 
 
 ### Coordinate Loader
 The app includes a **"Load from Files"** button, which loads latitude and longitude values from a file named **"coordinate.txt"** in the assets folder. This file should contain the coordinates of various locations in the GTA. The default file can be modified, or a new file can be added to the assets folder for custom data.
-
-## Challenges
-The main challenge encountered during development was setting up and using the Geocoder API for converting coordinates into addresses. Online documentation and resources provided solutions that streamlined the implementation.
 
 ## Setup
 1. Clone the repository to your local machine.
