@@ -5,7 +5,7 @@ LocationFinder is an Android app designed to manage and interact with location d
 
 ## Features
 
-### 1. Database and Location Table
+### 1. Database Setup and Location Table
 - The app connects to a local database with a `location` table that includes the following columns:
   - **ID**: Unique identifier for each location entry.
   - **Address**: Address associated with a given location.
@@ -51,5 +51,5 @@ The app includes a **"Load from Files"** button, which loads latitude and longit
 - Launch the app to view a list of locations.
 - Use the **Add Location** button to add new locations.
 - Click any location entry to view, edit, or delete.
-- Use the **Load from Files** button to load preset locations from the `coordinate.txt` file.
+- Use the **Load from Files** button to load preset locations from the `coordinate.txt` file. (Ensure file is in the correct folder)
 
